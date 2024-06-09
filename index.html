@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-info text-center mb-4 mt-4">"Scientific Calculator"</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-3">
+                <div class="table-responsive text-center col-lg-12">
+                    <table class="table table-primary">
+                        <tr>
+                            <td colspan="4"><input type="text" id="display-result" value="" class="form-control"></td>
+                        </tr>
+                        <tbody>
+                            <tr class="">
+                                <td scope="row"><button type=" button" onclick="operand('1')" class="btn btn-outline-primary">1</button></td>
+                                <td><button type="button" onclick="operand('2')" class="btn btn-outline-primary">2</button></td>
+                                <td><button type="button" onclick="operand('3')" class="btn btn-outline-primary">3</button></td>
+                                <td><button type="button" onclick="opertaors('*')" class="btn btn-outline-primary">*</button></td>
+                            </tr>
+                            <tr class="">
+                                <td scope="row"><button type="button" onclick="operand('4')" class="btn btn-outline-primary">4</button></td>
+                                <td><button type="button" onclick="operand('5')" class="btn btn-outline-primary">5</button></td>
+                                <td><button type="button" onclick="operand('6')" class="btn btn-outline-primary">6</button></td>
+                                <td><button type="button" onclick="opertaors('+')" class="btn btn-outline-primary">+</button></td>
+                            </tr>
+                            <tr class="">
+                                <td scope="row"><button type="button" onclick="operand('7')" class="btn btn-outline-primary">7</button></td>
+                                <td><button type="button" onclick="operand('8')" class="btn btn-outline-primary">8</button></td>
+                                <td><button type="button" onclick="operand('9')" class="btn btn-outline-primary">9</button></td>
+                                <td><button type="button" onclick="opertaors('-')" class="btn btn-outline-primary">-</button></td>
+                            </tr>
+                            <tr class="">
+                                <td scope="row"><button type="button" onclick="operand('0')" class="btn btn-outline-primary">0</button></td>
+                                <td><button type="button" onclick="operand('.')" class="btn btn-outline-primary">.</button></td>
+                                <td><button type="button" onclick="del('←')" class="btn btn-outline-primary">←</button></td>
+                                <td><button type="button" onclick="operand('/')" class="btn btn-outline-primary">/</button></td>
+                            </tr>
+                            <tr class="" >
+                                <td><button type="button" onclick="calculate('=')" class="btn btn-outline-primary">=</button></td>
+                                <td><button type="button" onclick="cos('cos')" class="btn btn-outline-primary">cos</button></td>
+                                <td><button type="button" onclick="sin('sin')" class="btn btn-outline-primary">sin</button></td>
+                                <td><button type="button" onclick="tan('tan')" class="btn btn-outline-primary">tan</button></td>
+                            </tr>
+                            <tr class="" >
+                                <td><button type="button" onclick="sqrt('√')" class="btn btn-outline-primary">√</button></td>
+                                <td><button type="button" onclick="PI('π')" class="btn btn-outline-primary">π</button></td>
+                                <td><button type="button" onclick="sq('x²')" class="btn btn-outline-primary">x²</button></td>
+                                <td><button type="button" onclick="log('In')" class="btn btn-outline-primary">In</button></td>
+                            </tr>
+                            <tr class="" >
+                            <td><button type="button" onclick="clearall('cc')" class="btn btn-outline-primary">cc</button></td>
+                                <td><button type="button" onclick="percent('%')" class="btn btn-outline-primary">%</button></td>
+                                <td><button type="button" onclick="brakets('(')" class="btn btn-outline-primary">(</button></td>
+                                <td><button type="button" onclick="brakets(')')" class="btn btn-outline-primary">)</button></td>
+                            </tr>
+                            <tr class="" >
+                                <td><button type="button" onclick="cube(' x3')" class="btn btn-outline-primary"> x3</button></td>
+                                    <td><button type="button" onclick="pow('x^y')" class="btn btn-outline-primary">x^y</button></td>
+                                    <td><button type="button" onclick="logath('log')" class="btn btn-outline-primary">log</button></td>
+                                    <td><button type="button" onclick="expr('exp')" class="btn btn-outline-primary">exp</button></td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./Scientific Caculator/JS/calculator.js"></script>
+</body>
+
+</html>
